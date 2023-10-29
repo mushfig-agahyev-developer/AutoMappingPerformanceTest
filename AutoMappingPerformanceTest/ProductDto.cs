@@ -12,8 +12,8 @@ namespace AutoMappingPerformanceTest
         public string Description { get; set; }
         public decimal Price { get; set; }
 
-		//public static explicit operator ProductDto(Product vs)
-		public static implicit operator ProductDto(Product vs)
+		//public static implicit operator ProductDto(Product vs)
+		public static explicit operator ProductDto(Product vs)
 		{
 			if (vs == null)
 				return null;

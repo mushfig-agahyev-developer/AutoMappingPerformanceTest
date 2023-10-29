@@ -29,7 +29,7 @@ namespace AutoMappingPerformanceTest
 
 			_mapper = config.CreateMapper();
 
-			_products = (Product[])Enumerable.Range(1, Capacity)
+			_products = Enumerable.Range(1, Capacity)
 				.Select(num => new Product
 				{
 					ID = num,
